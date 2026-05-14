@@ -1,16 +1,16 @@
-import faustino from "../assets/faustino.jpg"
-import fotoCV from "../assets/FOTO-CV.jpeg"
-import java from "../assets/java.png"
-import python from "../assets/python.png"
-import sql from "../assets/sql.jpg"
-import xammar from "../assets/xammar.jpg"
-import { Card } from "@mui/material"
+import faustino from "../assets/cueva/faustino.jpg"
+import fotoCV from "../assets/cueva/FOTO-CV.jpeg"
+import java from "../assets/cueva/java.png"
+import python from "../assets/cueva/python.png"
+import sql from "../assets/cueva/sql.jpg"
+import xammar from "../assets/cueva/xammar.jpg"
 import { CardContent } from "@mui/material"
 import { LinearProgress } from "@mui/material"
 import PersonIcon from '@mui/icons-material/Person'
 import EmailIcon from '@mui/icons-material/Email'
 import PhoneIcon from '@mui/icons-material/Phone'
 import { Height, Person, Phone, Work } from "@mui/icons-material"
+import { TextField, Button } from "@mui/material"
 
 function CuevaCV() {
   return (
@@ -38,10 +38,10 @@ function CuevaCV() {
         <h2 className="titulo-fuente">Estudios Realizados</h2>
         <hr />
         <br />
-        <div className="estudios-columnas">
-          <div className="estudios-primaria">
+        <div className="estudios-columnas" style={{ display: 'flex', flexWrap: 'wrap', gap: '20px', justifyContent: 'center' }}>
+          <div className="estudios-primaria" style={{ textAlign: 'center', flex: '1', minWidth: '250px' }} >
             <div className="primaria-image">
-              <img src={xammar} alt="Foto de Primaria" />
+              <img src={xammar} alt="Foto de Primaria" style={{ width: '100%', height: '200px', borderRadius: '8px', objectFit: 'cover' }} />
             </div>
             <div className="primaria-info">
               <h2 className="primaria-nombre">I.E.E. Luis Fabio Xammar Jurado</h2>
@@ -52,9 +52,9 @@ function CuevaCV() {
             </div>
           </div>
 
-          <div className="estudios-secundaria">
+          <div className="estudios-secundaria" style={{ textAlign: 'center', flex: '1', minWidth: '250px' }} >
             <div className="secundaria-image">
-              <img src={xammar} alt="Foto de Secundaria" />
+              <img src={xammar} alt="Foto de Secundaria" style={{ width: '100%', height: '200px', borderRadius: '8px', objectFit: 'cover' }} />
             </div>
             <div className="secundaria-info">
               <h2 className="secundaria-nombre">I.E.E. Luis Fabio Xammar Jurado</h2>
@@ -65,9 +65,9 @@ function CuevaCV() {
             </div>
           </div>
 
-          <div className="estudios-universidad">
+          <div className="estudios-universidad" style={{ textAlign: 'center', flex: '1', minWidth: '250px' }} >
             <div className="universidad-image">
-              <img src={faustino} alt="Foto de Universidad" />
+              <img src={faustino} alt="Foto de Universidad" style={{ width: '100%', height: '200px', borderRadius: '8px', objectFit: 'cover' }} />
             </div>
             <div className="universidad-info">
               <h2 className="universidad-nombre">Universidad Nacional José Faustino Sánchez Carrión</h2>
@@ -280,28 +280,49 @@ function CuevaCV() {
         <hr />
         <br />
         <form action="#">
+
           <div className="form-container">
-            <label><i><PersonIcon sx={{fontSize: 16}}/></i> Nombres  </label>
-            <input className="input-nombre" type="text" placeholder="Ingrese sus nombres" name="txtNombres" />
+            <label><i><PersonIcon sx={{ fontSize: 16 }} /></i> Nombres  </label>
+            <TextField
+              variant="outlined"
+              placeholder="Ingrese sus nombres"
+              className="txtNombres"
+              required
+            />
 
-            <br />
+            <label><i><Person sx={{ fontSize: 16 }} /></i> Apellidos</label>
+              <TextField
+              variant="outlined"
+              placeholder="Ingrese sus apellidos"
+              className="txtApellido"
+               required
+            />
 
-            <label><i><PersonIcon sx={{fontSize: 16}}/></i> Apellidos</label>
-            <input className="input-apellido" type="text" placeholder="Ingrese sus apellidos" name="txtApellidos" />
+            <label><i><PhoneIcon sx={{ fontSize: 16 }} /></i> Celular</label>
+              <TextField
+              variant="outlined"
+              placeholder="Ingrese su celular"
+              className="txtCelular"
+               required
+            />
 
-            <br />
+        
+            <label><i><EmailIcon sx={{ fontSize: 16 }} /></i> Correo electrónico</label>
+              <TextField
+              variant="outlined"
+              placeholder="Ingrese su correo"
+              className="txtCorreo"
+               required
+            />
 
-            <label><i><PhoneIcon sx={{fontSize: 16}}/></i> Celular</label>
-            <input className="input-celular" type="text" placeholder="Ingrese su celular" name="txtCelular" />
-
-            <br />
-
-            <label><i><EmailIcon sx={{fontSize: 16}}/></i> Correo electrónico</label>
-            <input className="input-correo" type="text" placeholder="Ingrese su correo" name="txtCorreo" />
-            <br />
-
-            <label><i><Work sx={{fontSize: 16}}/></i> Comentario:</label>
-            <textarea className="input-comentario" placeholder="Ingrese su comentario" name="txtComentario"></textarea>
+            <label><i><Work sx={{ fontSize: 16 }} /></i> Comentario:</label>
+            <TextField
+              variant="outlined"
+              placeholder="Ingrese su comentario"
+              rows={4}
+              multiline
+              sx={{borderRight: "5px solid #057e7e"}}
+            />
 
           </div>
           <input className="btn-subir" type="submit" />
