@@ -10,7 +10,6 @@ function Header({ profile, cambiarPerfil }: Props) {
 
     return (
         <header className="header">
-
             <p>{profile.numero} | {profile.correo}</p>
             <nav>
                 <ul>
@@ -22,11 +21,7 @@ function Header({ profile, cambiarPerfil }: Props) {
                     <li><a href="#contacto">Contacto</a></li>
                     <li><Switch onChange={cambiarPerfil}></Switch></li>
                 </ul>
-
             </nav>
-
-
-
         </header>
     )
 }

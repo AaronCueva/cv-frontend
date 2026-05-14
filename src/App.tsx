@@ -1,9 +1,8 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
 import CuevaCV from './components/CuevaCV'
+import HuertaCV from './components/HuertaCV'
 import Header from './components/Header'
+import Footer from './components/Footer'
 
 import type { Profile } from './types/Profile'
 
@@ -34,13 +33,18 @@ function App() {
           profile={profile}
           cambiarPerfil={() => setIsCueva(!isCueva)}
         ></Header>
+
+        {
+          isCueva
+          ? <CuevaCV/> : <HuertaCV/>
+        }
+
+        <Footer
+          profile={profile}
+        ></Footer>
+
       </div>
     </>
-
-
-
-
-
   )
 }
 
