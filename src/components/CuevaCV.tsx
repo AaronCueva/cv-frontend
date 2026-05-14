@@ -7,6 +7,10 @@ import xammar from "../assets/xammar.jpg"
 import { Card } from "@mui/material"
 import { CardContent } from "@mui/material"
 import { LinearProgress } from "@mui/material"
+import PersonIcon from '@mui/icons-material/Person'
+import EmailIcon from '@mui/icons-material/Email'
+import PhoneIcon from '@mui/icons-material/Phone'
+import { Height, Person, Phone, Work } from "@mui/icons-material"
 
 function CuevaCV() {
   return (
@@ -277,26 +281,26 @@ function CuevaCV() {
         <br />
         <form action="#">
           <div className="form-container">
-            <label><i><img src="image.png" width="15px" height="15px" /></i> Nombres  </label>
+            <label><i><PersonIcon sx={{fontSize: 16}}/></i> Nombres  </label>
             <input className="input-nombre" type="text" placeholder="Ingrese sus nombres" name="txtNombres" />
 
             <br />
 
-            <label><i><img src="image.png" width="15px" height="15px" /></i> Apellidos</label>
+            <label><i><PersonIcon sx={{fontSize: 16}}/></i> Apellidos</label>
             <input className="input-apellido" type="text" placeholder="Ingrese sus apellidos" name="txtApellidos" />
 
             <br />
 
-            <label><i><img src="cel.png" width="15px" height="15px" /></i> Celular</label>
+            <label><i><PhoneIcon sx={{fontSize: 16}}/></i> Celular</label>
             <input className="input-celular" type="text" placeholder="Ingrese su celular" name="txtCelular" />
 
             <br />
 
-            <label><i><img src="correo.png" width="15px" height="15px" /></i> Correo electrónico</label>
+            <label><i><EmailIcon sx={{fontSize: 16}}/></i> Correo electrónico</label>
             <input className="input-correo" type="text" placeholder="Ingrese su correo" name="txtCorreo" />
             <br />
 
-            <label><i><img src="comentario.png" width="15px" height="15px" /></i> Comentario:</label>
+            <label><i><Work sx={{fontSize: 16}}/></i> Comentario:</label>
             <textarea className="input-comentario" placeholder="Ingrese su comentario" name="txtComentario"></textarea>
 
           </div>
