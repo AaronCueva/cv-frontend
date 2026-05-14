@@ -1,16 +1,27 @@
-import faustino from "../assets/cueva/faustino.jpg"
-import fotoCV from "../assets/cueva/FOTO-CV.jpeg"
-import java from "../assets/cueva/java.png"
-import python from "../assets/cueva/python.png"
-import sql from "../assets/cueva/sql.jpg"
-import xammar from "../assets/cueva/xammar.jpg"
-import { CardContent } from "@mui/material"
-import { LinearProgress } from "@mui/material"
-import PersonIcon from '@mui/icons-material/Person'
-import EmailIcon from '@mui/icons-material/Email'
-import PhoneIcon from '@mui/icons-material/Phone'
-import { Height, Person, Phone, Work } from "@mui/icons-material"
-import { TextField, Button } from "@mui/material"
+import faustino from "../assets/cueva/faustino.jpg";
+import fotoCV from "../assets/cueva/FOTO-CV.jpeg";
+import java from "../assets/cueva/java.png";
+import python from "../assets/cueva/python.png";
+import sql from "../assets/cueva/sql.jpg";
+import xammar from "../assets/cueva/xammar.jpg";
+import { Card, CardContent, Stack } from "@mui/material";
+import { LinearProgress } from "@mui/material";
+import PersonIcon from "@mui/icons-material/Person";
+import EmailIcon from "@mui/icons-material/Email";
+import PhoneIcon from "@mui/icons-material/Phone";
+import { BorderAll, Height, Person, Phone, Work } from "@mui/icons-material";
+import { TextField, Button } from "@mui/material";
+
+import {
+  TableContainer,
+  Table,
+  TableCell,
+  TableRow,
+  TableBody,
+  Paper,
+  TableHead,
+  TableFooter,
+} from "@mui/material";
 
 function CuevaCV() {
   return (
@@ -22,14 +33,18 @@ function CuevaCV() {
           </div>
           <div className="perfil-info">
             <h2 className="perfil-nombre">Aaron Cueva Paredes</h2>
-            <p className="perfil-descripcion">Soy estudiante del IX ciclo de Ingeniería Informática en la UNJFSC y
-              desarrollador Backend especializado en Java y Spring Boot, con aproximadamente dos años de
-              experiencia participando en el desarrollo de APIs, sistemas web y soluciones orientadas a
-              arquitectura cliente–servidor.
-              He trabajado en la construcción de servicios REST, integración con bases de datos relacionales,
-              autenticación y seguridad, y despliegue de aplicaciones, aplicando buenas prácticas de desarrollo,
-              control de versiones y metodologías ágiles. Me enfoco en escribir código limpio, mantenible y
-              escalable, priorizando el rendimiento y la seguridad de las aplicaciones.
+            <p className="perfil-descripcion">
+              Soy estudiante del IX ciclo de Ingeniería Informática en la UNJFSC
+              y desarrollador Backend especializado en Java y Spring Boot, con
+              aproximadamente dos años de experiencia participando en el
+              desarrollo de APIs, sistemas web y soluciones orientadas a
+              arquitectura cliente–servidor. He trabajado en la construcción de
+              servicios REST, integración con bases de datos relacionales,
+              autenticación y seguridad, y despliegue de aplicaciones, aplicando
+              buenas prácticas de desarrollo, control de versiones y
+              metodologías ágiles. Me enfoco en escribir código limpio,
+              mantenible y escalable, priorizando el rendimiento y la seguridad
+              de las aplicaciones.
             </p>
           </div>
         </div>
@@ -38,13 +53,35 @@ function CuevaCV() {
         <h2 className="titulo-fuente">Estudios Realizados</h2>
         <hr />
         <br />
-        <div className="estudios-columnas" style={{ display: 'flex', flexWrap: 'wrap', gap: '20px', justifyContent: 'center' }}>
-          <div className="estudios-primaria" style={{ textAlign: 'center', flex: '1', minWidth: '250px' }} >
+        <div
+          className="estudios-columnas"
+          style={{
+            display: "flex",
+            flexWrap: "wrap",
+            gap: "20px",
+            justifyContent: "center",
+          }}
+        >
+          <div
+            className="estudios-primaria"
+            style={{ textAlign: "center", flex: "1", minWidth: "250px" }}
+          >
             <div className="primaria-image">
-              <img src={xammar} alt="Foto de Primaria" style={{ width: '100%', height: '200px', borderRadius: '8px', objectFit: 'cover' }} />
+              <img
+                src={xammar}
+                alt="Foto de Primaria"
+                style={{
+                  width: "100%",
+                  height: "200px",
+                  borderRadius: "8px",
+                  objectFit: "cover",
+                }}
+              />
             </div>
             <div className="primaria-info">
-              <h2 className="primaria-nombre">I.E.E. Luis Fabio Xammar Jurado</h2>
+              <h2 className="primaria-nombre">
+                I.E.E. Luis Fabio Xammar Jurado
+              </h2>
               <p className="primaria-descripcion">
                 Primaria <br />
                 2014 - 2016
@@ -52,12 +89,26 @@ function CuevaCV() {
             </div>
           </div>
 
-          <div className="estudios-secundaria" style={{ textAlign: 'center', flex: '1', minWidth: '250px' }} >
+          <div
+            className="estudios-secundaria"
+            style={{ textAlign: "center", flex: "1", minWidth: "250px" }}
+          >
             <div className="secundaria-image">
-              <img src={xammar} alt="Foto de Secundaria" style={{ width: '100%', height: '200px', borderRadius: '8px', objectFit: 'cover' }} />
+              <img
+                src={xammar}
+                alt="Foto de Secundaria"
+                style={{
+                  width: "100%",
+                  height: "200px",
+                  borderRadius: "8px",
+                  objectFit: "cover",
+                }}
+              />
             </div>
             <div className="secundaria-info">
-              <h2 className="secundaria-nombre">I.E.E. Luis Fabio Xammar Jurado</h2>
+              <h2 className="secundaria-nombre">
+                I.E.E. Luis Fabio Xammar Jurado
+              </h2>
               <p className="secundaria-descripcion">
                 Secundaria <br />
                 2017 - 2021
@@ -65,12 +116,26 @@ function CuevaCV() {
             </div>
           </div>
 
-          <div className="estudios-universidad" style={{ textAlign: 'center', flex: '1', minWidth: '250px' }} >
+          <div
+            className="estudios-universidad"
+            style={{ textAlign: "center", flex: "1", minWidth: "250px" }}
+          >
             <div className="universidad-image">
-              <img src={faustino} alt="Foto de Universidad" style={{ width: '100%', height: '200px', borderRadius: '8px', objectFit: 'cover' }} />
+              <img
+                src={faustino}
+                alt="Foto de Universidad"
+                style={{
+                  width: "100%",
+                  height: "200px",
+                  borderRadius: "8px",
+                  objectFit: "cover",
+                }}
+              />
             </div>
             <div className="universidad-info">
-              <h2 className="universidad-nombre">Universidad Nacional José Faustino Sánchez Carrión</h2>
+              <h2 className="universidad-nombre">
+                Universidad Nacional José Faustino Sánchez Carrión
+              </h2>
               <p className="universidad-descripcion">
                 Superior <br />
                 2022 - En proceso
@@ -93,7 +158,9 @@ function CuevaCV() {
               <h2>Java</h2>
             </div>
             <div className="java-barra">
-              <div className="barra-progreso-java" style={{ width: "70%" }}>70%</div>
+              <div className="barra-progreso-java" style={{ width: "70%" }}>
+                70%
+              </div>
             </div>
           </div>
         </div>
@@ -109,7 +176,9 @@ function CuevaCV() {
               <h2>SQL</h2>
             </div>
             <div className="sql-barra">
-              <div className="barra-progreso-sql" style={{ width: "80%" }}>80%</div>
+              <div className="barra-progreso-sql" style={{ width: "80%" }}>
+                80%
+              </div>
             </div>
           </div>
         </div>
@@ -125,7 +194,9 @@ function CuevaCV() {
               <h2>Python</h2>
             </div>
             <div className="python-barra">
-              <div className="barra-progreso-python" style={{ width: "50%" }}>50%</div>
+              <div className="barra-progreso-python" style={{ width: "50%" }}>
+                50%
+              </div>
             </div>
           </div>
         </div>
@@ -145,7 +216,7 @@ function CuevaCV() {
                 className="progreso"
                 sx={{
                   height: 10,
-                  borderRadius: 5
+                  borderRadius: 5,
                 }}
               />
             </div>
@@ -160,7 +231,7 @@ function CuevaCV() {
                 className="progreso"
                 sx={{
                   height: 10,
-                  borderRadius: 5
+                  borderRadius: 5,
                 }}
               />
             </div>
@@ -175,7 +246,7 @@ function CuevaCV() {
                 className="progreso"
                 sx={{
                   height: 10,
-                  borderRadius: 5
+                  borderRadius: 5,
                 }}
               />
             </div>
@@ -190,16 +261,14 @@ function CuevaCV() {
                 className="progreso"
                 sx={{
                   height: 10,
-                  borderRadius: 5
+                  borderRadius: 5,
                 }}
               />
             </div>
           </div>
 
           <div className="habilidad">
-            <span className="titulo-habilidad">
-              Trabajo en equipo
-            </span>
+            <span className="titulo-habilidad">Trabajo en equipo</span>
             <div className="barra">
               <LinearProgress
                 variant="determinate"
@@ -207,7 +276,7 @@ function CuevaCV() {
                 className="progreso"
                 sx={{
                   height: 10,
-                  borderRadius: 5
+                  borderRadius: 5,
                 }}
               />
             </div>
@@ -222,7 +291,7 @@ function CuevaCV() {
                 className="progreso"
                 sx={{
                   height: 10,
-                  borderRadius: 5
+                  borderRadius: 5,
                 }}
               />
             </div>
@@ -237,13 +306,12 @@ function CuevaCV() {
                 className="progreso"
                 sx={{
                   height: 10,
-                  borderRadius: 5
+                  borderRadius: 5,
                 }}
               />
             </div>
           </div>
         </div>
-
       </section>
       <section id="intereses" className="intereses">
         <h2 className="titulo-fuente">Intereses</h2>
@@ -273,16 +341,19 @@ function CuevaCV() {
             <h3>Ciberseguridad</h3>
           </CardContent>
         </div>
-
       </section>
       <section id="contacto" className="contacto">
         <h2 className="titulo-fuente">Contacto</h2>
         <hr />
         <br />
         <form action="#">
-
           <div className="form-container">
-            <label><i><PersonIcon sx={{ fontSize: 16 }} /></i> Nombres  </label>
+            <label>
+              <i>
+                <PersonIcon sx={{ fontSize: 16 }} />
+              </i>{" "}
+              Nombres{" "}
+            </label>
             <TextField
               variant="outlined"
               placeholder="Ingrese sus nombres"
@@ -290,46 +361,122 @@ function CuevaCV() {
               required
             />
 
-            <label><i><Person sx={{ fontSize: 16 }} /></i> Apellidos</label>
-              <TextField
+            <label>
+              <i>
+                <Person sx={{ fontSize: 16 }} />
+              </i>{" "}
+              Apellidos
+            </label>
+            <TextField
               variant="outlined"
               placeholder="Ingrese sus apellidos"
               className="txtApellido"
-               required
+              required
             />
 
-            <label><i><PhoneIcon sx={{ fontSize: 16 }} /></i> Celular</label>
-              <TextField
+            <label>
+              <i>
+                <PhoneIcon sx={{ fontSize: 16 }} />
+              </i>{" "}
+              Celular
+            </label>
+            <TextField
               variant="outlined"
               placeholder="Ingrese su celular"
               className="txtCelular"
-               required
+              required
             />
 
-        
-            <label><i><EmailIcon sx={{ fontSize: 16 }} /></i> Correo electrónico</label>
-              <TextField
+            <label>
+              <i>
+                <EmailIcon sx={{ fontSize: 16 }} />
+              </i>{" "}
+              Correo electrónico
+            </label>
+            <TextField
               variant="outlined"
               placeholder="Ingrese su correo"
               className="txtCorreo"
-               required
+              required
             />
 
-            <label><i><Work sx={{ fontSize: 16 }} /></i> Comentario:</label>
+            <label>
+              <i>
+                <Work sx={{ fontSize: 16 }} />
+              </i>{" "}
+              Comentario:
+            </label>
             <TextField
               variant="outlined"
               placeholder="Ingrese su comentario"
               rows={4}
               multiline
-              sx={{borderRight: "5px solid #057e7e"}}
+              sx={{ borderRight: "5px solid #057e7e" }}
             />
-
           </div>
           <input className="btn-subir" type="submit" />
         </form>
       </section>
+
+      <TableContainer component={Paper} sx={{ border: "2px solid black" }}>
+        <Table>
+          <TableHead>
+            <TableRow>
+              <TableCell>Empresa</TableCell>
+              <TableCell>Experiencia</TableCell>
+            </TableRow>
+          </TableHead>
+          <TableBody>
+            <TableRow>
+              <TableCell>
+                <TextField label="Empresa" variant="filled" fullWidth></TextField>
+              </TableCell>
+              <TableCell>1 año</TableCell>
+            </TableRow>
+            <TableRow>
+              <TableCell>LVL Consulting</TableCell>
+              <TableCell>5 meses</TableCell>
+            </TableRow>
+            <TableRow>
+              <TableCell>Clinica San Bartolome</TableCell>
+              <TableCell>Actualidad</TableCell>
+            </TableRow>
+          </TableBody>
+          <TableFooter>
+            <TableRow>
+              <TableCell>Empresa</TableCell>
+              <TableCell>Experiencia</TableCell>
+            </TableRow>
+          </TableFooter>
+        </Table>
+      </TableContainer>
+
+      <form action="#">
+        <Card sx={{ maxWidth: 500 }}>
+          <CardContent>
+            <Stack spacing={3}>
+              <TextField
+                label="¿Quieres Chamba?"
+                variant="standard"
+                fullWidth
+              ></TextField>
+              <TextField
+                label="Recomiendame un trabajo"
+                variant="outlined"
+                fullWidth
+                multiline
+                rows={6}
+              ></TextField>
+
+              <Button type="submit" variant="contained">
+                Enviar
+              </Button>
+            </Stack>
+          </CardContent>
+        </Card>
+      </form>
     </>
-  )
+  );
 }
 
-export default CuevaCV
+export default CuevaCV;
