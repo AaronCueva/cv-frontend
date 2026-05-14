@@ -10,6 +10,8 @@ import './App.css'
 
 function App() {
 
+  const [isCueva, setIsCueva] = useState(true)
+
   const cueva: Profile = {
     nombre: "Aaron Cueva Paredes",
     numero: "913039208",
@@ -18,11 +20,10 @@ function App() {
 
   const huerta: Profile = {
     nombre: "Jesus Manuel Huerta Florentino",
-    numero: "....",
-    correo: "jesusista@gmail.com"
+    numero: "+51 977178193",
+    correo: "jesushuertajob@gmail.com"
   }
 
-  const [isCueva, setIsCueva] = useState(true)
   const profile = isCueva ? cueva : huerta
 
   return (
@@ -36,7 +37,7 @@ function App() {
 
         {
           isCueva
-          ? <CuevaCV/> : <HuertaCV/>
+            ? <CuevaCV /> : <HuertaCV />
         }
 
         <Footer
