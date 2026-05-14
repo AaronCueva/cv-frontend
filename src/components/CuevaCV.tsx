@@ -255,22 +255,22 @@ function CuevaCV() {
             <h3>Desarrollo web</h3>
           </CardContent>
           <CardContent className="interes-card">
-            <h3>Desarrollo web</h3>
+            <h3>Inteligencia artificial</h3>
           </CardContent>
           <CardContent className="interes-card">
-            <h3>Desarrollo web</h3>
+            <h3>Automatización con IA</h3>
           </CardContent>
           <CardContent className="interes-card">
-            <h3>Desarrollo web</h3>
+            <h3>Analisis de Datos</h3>
           </CardContent>
           <CardContent className="interes-card">
-            <h3>Desarrollo web</h3>
+            <h3>Bases de datos</h3>
           </CardContent>
           <CardContent className="interes-card">
-            <h3>Desarrollo web</h3>
+            <h3>Desarrollo móvil</h3>
           </CardContent>
           <CardContent className="interes-card">
-            <h3>Desarrollo web</h3>
+            <h3>Ciberseguridad</h3>
           </CardContent>
         </div>
 
