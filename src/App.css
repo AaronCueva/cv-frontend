@@ -1,17 +1,17 @@
-* {
+.theme-cueva * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
-body {
+.theme-cueva body {
   background-color: #fefaf5;
   color: black;
   line-height: 1.5;
 }
 
-header {
+.theme-cueva header {
   background-color: #f9e0c2;
   color: #057e7e;
   padding: 20px;
@@ -20,26 +20,26 @@ header {
   border-radius: 4px;
 }
 
-header p {
+.theme-cueva header p {
   font-size: 18px;
   font-weight: bold;
   display: inline-block;
 }
 
-header nav {
+.theme-cueva header nav {
   float: right;
 }
 
-header ul {
+.theme-cueva header ul {
   list-style: none;
 }
 
-header li {
+.theme-cueva header li {
   display: inline-block;
   margin-left: 10px;
 }
 
-header li a {
+.theme-cueva header li a {
   text-decoration: none;
   color: #057e7e;
   background-color: aliceblue;
@@ -48,12 +48,12 @@ header li a {
   transition: background 0.3s ease;
 }
 
-header li a:hover {
+.theme-cueva header li a:hover {
   background-color: rgba(213, 60, 9, 0.5);
   color: #fefaf5;
 }
 
-footer {
+.theme-cueva footer {
   background-color: #f8cc95;
   color: #057e7e;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -65,13 +65,13 @@ footer {
   padding: 20px;
 }
 
-footer p {
+.theme-cueva footer p {
   font-size: 15px;
   font-weight: bold;
   text-align: center;
 }
 
-section {
+.theme-cueva section {
   background-color: #feecd3;
   width: 85%;
   margin: 30px auto;
@@ -80,7 +80,7 @@ section {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.perfil {
+.theme-cueva .perfil {
   background-color: #feecd3;
   width: 85%;
   margin: 30px auto;
@@ -89,14 +89,14 @@ section {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.perfil-container {
+.theme-cueva .perfil-container {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
 
-.perfil-image img {
+.theme-cueva .perfil-image img {
   width: 300px;
   height: 300px;
   border-radius: 50%;
@@ -104,19 +104,19 @@ section {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-.perfil-info {
+.theme-cueva .theme-cueva .perfil-info {
   max-width: 900px;
   text-align: left;
 }
 
-.perfil-nombre {
+.theme-cueva .perfil-nombre {
   font-size: 24px;
   color: #057e7e;
   margin-bottom: 10px;
   padding-left: 50px;
 }
 
-.perfil-descripcion {
+.theme-cueva .perfil-descripcion {
   font-size: 16px;
   color: black;
   line-height: 1.6;
@@ -124,7 +124,7 @@ section {
   padding-left: 50px;
 }
 
-.estudios {
+.theme-cueva .estudios {
   background-color: #feecd3;
   width: 85%;
   margin: 30px auto;
@@ -133,18 +133,18 @@ section {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.estudios-columnas {
+.theme-cueva .estudios-columnas {
   columns: 3;
 }
 
-.estudios-primaria {
+.theme-cueva .estudios-primaria {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
 
-.primaria-image img {
+.theme-cueva .primaria-image img {
   width: 200px;
   height: 200px;
   border-radius: 10%;
@@ -152,28 +152,28 @@ section {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-.primaria-info {
+.theme-cueva .primaria-info {
   max-width: 300px;
   text-align: center;
 }
 
-.primaria-nombre {
+.theme-cueva .primaria-nombre {
   color: #057e7e;
   font-size: 18px;
 }
 
-.primaria-descripcion {
+.theme-cueva .primaria-descripcion {
   font-size: 15px;
 }
 
-.estudios-secundaria {
+.theme-cueva .estudios-secundaria {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
 
-.secundaria-image img {
+.theme-cueva .secundaria-image img {
   width: 200px;
   height: 200px;
   border-radius: 10%;
@@ -181,28 +181,28 @@ section {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-.secundaria-info {
+.theme-cueva .secundaria-info {
   max-width: 300px;
   text-align: center;
 }
 
-.secundaria-nombre {
+.theme-cueva .secundaria-nombre {
   color: #057e7e;
   font-size: 18px;
 }
 
-.secundaria-descripcion {
+.theme-cueva .secundaria-descripcion {
   font-size: 15px;
 }
 
-.estudios-universidad {
+.theme-cueva .estudios-universidad {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
 
-.universidad-image img {
+.theme-cueva .universidad-image img {
   width: 200px;
   height: 200px;
   border-radius: 10%;
@@ -210,23 +210,23 @@ section {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-.universidad-info {
+.theme-cueva .universidad-info {
   max-width: 300px;
   text-align: center;
 }
 
-.universidad-nombre {
+.theme-cueva .universidad-nombre {
   color: #057e7e;
   font-size: 18px;
 }
 
-.universidad-descripcion {
+.theme-cueva .universidad-descripcion {
   font-size: 15px;
 }
 
 /*============================= CONOCIMIENTO =============================*/
 
-.conocimiento {
+.theme-cueva .conocimiento {
   background-color: #feecd3;
   width: 85%;
   margin: 30px auto;
@@ -235,7 +235,7 @@ section {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.conocimiento-card {
+.theme-cueva .conocimiento-card {
   background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
@@ -246,29 +246,29 @@ section {
 
 /*============================= JAVA =============================*/
 
-.java-image {
+.theme-cueva .java-image {
   flex: 0 0 100px;
   margin-right: 20px;
 }
 
-.java-image img {
+.theme-cueva .java-image img {
   width: 100%;
   height: auto;
   border-radius: 8px;
 }
 
-.java-info {
+.theme-cueva .java-info {
   flex: 1;
 }
 
-.java-barra {
+.theme-cueva .java-barra {
   width: 100%;
   background-color: #e0e0e0;
   border-radius: 25px;
   padding: 3px;
 }
 
-.barra-progreso-java {
+.theme-cueva .barra-progreso-java {
   height: 20px;
   background: linear-gradient(to right, red, orange);
   border-radius: 20px;
@@ -278,12 +278,12 @@ section {
 
 /*============================= SQL =============================*/
 
-.sql-image {
+.theme-cueva .sql-image {
   flex: 0 0 100px;
   margin-right: 20px;
 }
 
-.sql-image img {
+.theme-cueva .sql-image img {
   width: 100%;
   height: auto;
   border-radius: 8px;
@@ -293,14 +293,14 @@ section {
   flex: 1;
 }
 
-.sql-barra {
+.theme-cueva .sql-barra {
   width: 100%;
   background-color: #e0e0e0;
   border-radius: 25px;
   padding: 3px;
 }
 
-.barra-progreso-sql {
+.theme-cueva .barra-progreso-sql {
   height: 20px;
   background: linear-gradient(to right, blue, skyblue);
   border-radius: 20px;
@@ -310,29 +310,29 @@ section {
 
 /*============================= PYTHON =============================*/
 
-.python-image {
+.theme-cueva .python-image {
   flex: 0 0 100px;
   margin-right: 20px;
 }
 
-.python-image img {
+.theme-cueva .python-image img {
   width: 100%;
   height: auto;
   border-radius: 8px;
 }
 
-.python-info {
+.theme-cueva .python-info {
   flex: 1;
 }
 
-.python-barra {
+.theme-cueva .python-barra {
   width: 100%;
   background-color: #e0e0e0;
   border-radius: 25px;
   padding: 3px;
 }
 
-.barra-progreso-python {
+.theme-cueva .barra-progreso-python {
   height: 20px;
   background: linear-gradient(to right, blue, yellow);
   border-radius: 20px;
@@ -342,7 +342,7 @@ section {
 
 /*============================= HABILIDADES =============================*/
 
-.habilidades {
+.theme-cueva .habilidades {
   background-color: #feecd3;
   width: 85%;
   margin: 30px auto;
@@ -351,14 +351,14 @@ section {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.titulo-fuente {
+.theme-cueva .titulo-fuente {
   font-weight: bold;
   color: #057e7e;
   text-align: center;
   font-size: 24px;
 }
 
-.habilidades-container {
+.theme-cueva .habilidades-container {
   background-color: white;
   border-radius: 8px;
   padding: 10px;
@@ -366,16 +366,16 @@ section {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.barra {
+.theme-cueva .barra {
   width: 100%;
   background-color: #e0e0e0;
   border-radius: 25px;
   padding: 3px;
 }
 
-.progreso {
+.theme-cueva .progreso {
   height: 20px;
-  background: linear-gradient(to right, rgb(68, 68, 240), rgb(80, 201, 253));
+  background: linear-gradient(to right, rgb(255, 255, 255), rgb(221, 234, 240));
   border-radius: 20px;
   text-align: center;
   color: rgb(255, 255, 255);
@@ -383,7 +383,7 @@ section {
 
 /*============================= INTERESES =============================*/
 
-.intereses-container {
+.theme-cueva .intereses-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -391,7 +391,7 @@ section {
   margin-top: 20px;
 }
 
-.interes-card {
+.theme-cueva .interes-card {
   background-color: #ffffff;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
@@ -403,13 +403,13 @@ section {
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
 
-.interes-card h3 {
+.theme-cueva .interes-card h3 {
   color: #057e7e;
   font-size: 18px;
   margin: 0;
 }
 
-.interes-card :hover {
+.theme-cueva .interes-card :hover {
   background-color: rgba(215, 68, 18, 0.5);
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
@@ -422,13 +422,13 @@ section {
 
 /*============================= CONTACTO =============================*/
 
-.contacto form {
+.theme-cueva .contacto form {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.form-container {
+.theme-cueva .form-container {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -441,15 +441,15 @@ section {
   border-left: 5px solid #057e7e;
 }
 
-.form-container input,
-.form-container textarea {
+.theme-cueva .form-container input,
+.theme-cueva .form-container textarea {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 8px;
   border-right: 5px solid #057e7e;
 }
 
-.btn-subir {
+.theme-cueva .btn-subir {
   display: block;
   margin: 20px auto 0;
   padding: 12px 32px;
@@ -460,12 +460,12 @@ section {
   cursor: pointer;
 }
 
-.btn-subir:hover {
+.theme-cueva .btn-subir:hover {
   background-color: #5eeeee;
   color: rgb(0, 0, 0);
 }
 
-.input-comentario {
+.theme-cueva .input-comentario {
   min-height: 140px;
   resize: vertical;
   max-width: 100%;
